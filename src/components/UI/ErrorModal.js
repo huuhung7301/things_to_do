@@ -5,11 +5,11 @@ import classes from "./ErrorModal.module.css";
 import ReactDom from "react-dom";
 
 const Backdrop = (props) => {
-  <div className={classes.backdrop} onClick={props.onConfirm} />;
+  return <div className={classes.backdrop} onClick={props.onConfirm} />;
 };
 
 const ModalOverLay = (props) => {
-  <Card className={classes.modal}>
+  return <Card className={classes.modal}>
     <header className={classes.header}>
       <h2>{props.title}</h2>
     </header>
